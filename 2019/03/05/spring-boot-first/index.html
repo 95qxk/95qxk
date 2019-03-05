@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="//98kweb.com">
   <title>SpringCloub：服务的注册与发现Eureka遇到的一个坑(入门) | qxk的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="首先，我学习SpringCloud是根据方志鹏老师的博客来进行练习的。在我创建过maven主工程后，启动一个服务注册中心，即添加一个注解@EnableEurekaServer ，这个注解需要在springboot工程的启动application类上加，如下图所示:">
+  <meta name="description" content="首先，我学习SpringCloud是根据方志鹏老师的博客来进行练习的。在我创建过maven主工程后，启动一个服务注册中心，即添加一个注解@EnableEurekaServer ，这个注解需要在springboot工程的启动application类上加，在这个过程中我出现了bug，如下图所示:">
 <meta name="keywords" content="SpringCloub,Eureka">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SpringCloub：服务的注册与发现Eureka遇到的一个坑(入门)">
 <meta property="og:url" content="//98kweb.com/2019/03/05/spring-boot-first/index.html">
 <meta property="og:site_name" content="qxk的博客">
-<meta property="og:description" content="首先，我学习SpringCloud是根据方志鹏老师的博客来进行练习的。在我创建过maven主工程后，启动一个服务注册中心，即添加一个注解@EnableEurekaServer ，这个注解需要在springboot工程的启动application类上加，如下图所示:">
+<meta property="og:description" content="首先，我学习SpringCloud是根据方志鹏老师的博客来进行练习的。在我创建过maven主工程后，启动一个服务注册中心，即添加一个注解@EnableEurekaServer ，这个注解需要在springboot工程的启动application类上加，在这个过程中我出现了bug，如下图所示:">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="//98kweb.com/assets/myImg/spring-boot-01.jpg">
-<meta property="og:updated_time" content="2019-03-05T03:19:59.959Z">
+<meta property="og:updated_time" content="2019-03-05T03:23:33.393Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SpringCloub：服务的注册与发现Eureka遇到的一个坑(入门)">
-<meta name="twitter:description" content="首先，我学习SpringCloud是根据方志鹏老师的博客来进行练习的。在我创建过maven主工程后，启动一个服务注册中心，即添加一个注解@EnableEurekaServer ，这个注解需要在springboot工程的启动application类上加，如下图所示:">
+<meta name="twitter:description" content="首先，我学习SpringCloud是根据方志鹏老师的博客来进行练习的。在我创建过maven主工程后，启动一个服务注册中心，即添加一个注解@EnableEurekaServer ，这个注解需要在springboot工程的启动application类上加，在这个过程中我出现了bug，如下图所示:">
 <meta name="twitter:image" content="//98kweb.com/assets/myImg/spring-boot-01.jpg">
   
     <link rel="alternative" href="/atom.xml" title="qxk的博客" type="application/atom+xml">
@@ -194,7 +194,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>首先，我学习SpringCloud是根据<a href="https://blog.csdn.net/forezp/article/details/81040925" target="_blank" rel="noopener">方志鹏</a>老师的博客来进行练习的。在我创建过maven主工程后，启动一个服务注册中心，即添加一个注解@EnableEurekaServer ，这个注解需要在springboot工程的启动application类上加，如下图所示:</p>
+        <p>首先，我学习SpringCloud是根据<a href="https://blog.csdn.net/forezp/article/details/81040925" target="_blank" rel="noopener">方志鹏</a>老师的博客来进行练习的。在我创建过maven主工程后，启动一个服务注册中心，即添加一个注解@EnableEurekaServer ，这个注解需要在springboot工程的启动application类上加，在这个过程中我出现了bug，如下图所示:</p>
 <p><img src="/assets/myImg/spring-boot-01.jpg" alt="Picture by Matt Carlson"></p>
 <a id="more"></a>
 <p>经过测试可得知出现这种现状的原因有两个且都是pom文件的配置问题，原因是properties的配置问题，且properties的配置与 dependencyManagement中的配置项对应。</p>
