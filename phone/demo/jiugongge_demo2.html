@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="//98kweb.com">
   <title>qxk的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="myReader  *{ margin: 0; padding: 0; }  body{ background: #eee; overflow-x : hidden; overflow-y : hidden; }  #container{ width: 600px; height: 400px; background: #eee; position: relative; } .tag{">
+  <meta name="description" content="九宫格（二）demo 	 		#main{ 			width: 170px; 			height:170px; 			background: blue; 			margin: 0 auto; 		} 		#main div{ 			width: 50px; 			line-height: 50px; 			text-align:center; 			background: #AAA;">
 <meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
 <meta property="og:type" content="website">
 <meta property="og:title" content="qxk的博客">
-<meta property="og:url" content="//98kweb.com/assets/demo/my_news_reader/index.html">
+<meta property="og:url" content="//98kweb.com/phone/demo/jiugongge_demo2.html">
 <meta property="og:site_name" content="qxk的博客">
-<meta property="og:description" content="myReader  *{ margin: 0; padding: 0; }  body{ background: #eee; overflow-x : hidden; overflow-y : hidden; }  #container{ width: 600px; height: 400px; background: #eee; position: relative; } .tag{">
+<meta property="og:description" content="九宫格（二）demo 	 		#main{ 			width: 170px; 			height:170px; 			background: blue; 			margin: 0 auto; 		} 		#main div{ 			width: 50px; 			line-height: 50px; 			text-align:center; 			background: #AAA;">
 <meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2017-07-28T18:51:08.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="qxk的博客">
-<meta name="twitter:description" content="myReader  *{ margin: 0; padding: 0; }  body{ background: #eee; overflow-x : hidden; overflow-y : hidden; }  #container{ width: 600px; height: 400px; background: #eee; position: relative; } .tag{">
+<meta name="twitter:description" content="九宫格（二）demo 	 		#main{ 			width: 170px; 			height:170px; 			background: blue; 			margin: 0 auto; 		} 		#main div{ 			width: 50px; 			line-height: 50px; 			text-align:center; 			background: #AAA;">
   
     <link rel="alternative" href="/atom.xml" title="qxk的博客" type="application/atom+xml">
   
@@ -62,9 +62,7 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags">随笔</a></li>
-	        
-				<li><a href="/categories">点点滴滴</a></li>
+				<li><a href="/phone">相册</a></li>
 	        
 				<li><a href="/archives/index.html">归档</a></li>
 	        
@@ -131,8 +129,6 @@
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
@@ -151,13 +147,11 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 25%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/tags">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/phone">相册</a></li>
 		        
-					<li style="width: 25%"><a href="/categories">点点滴滴</a></li>
-		        
-					<li style="width: 25%"><a href="/archives/index.html">归档</a></li>
+					<li style="width: 33.333333333333336%"><a href="/archives/index.html">归档</a></li>
 		        
 				</ul>
 			</nav>
@@ -177,45 +171,52 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
-<!DOCTYPE html>
+        <!doctype html>
 <html>
 <head><meta name="generator" content="Hexo 3.8.0">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>myReader</title>
-<style>
-*{
-margin: 0;
-padding: 0;
-}
-
-body{
-background: #eee;
-overflow-x : hidden;
-overflow-y : hidden;
-}
-
-#container{
-width: 600px;
-height: 400px;
-background: #eee;
-position: relative;
-}
-.tag{
-position: absolute;
-}
-</style>
+	<meta charset="UTF-8">
+	<title>九宫格（二）demo</title>
+	<style>
+		#main{
+			width: 170px;
+			height:170px;
+			background: blue;
+			margin: 0 auto;
+		}
+		#main div{
+			width: 50px;
+			line-height: 50px;
+			text-align:center;
+			background: #AAA;
+			margin:5px 5px 0 0;
+		}
+		#main a{
+			width: 55px;
+			line-height: 55px;
+			float: left;
+			padding: 0 0 5px 5px;
+			margin: 0 -5px -5px 0;
+			text-decoration: none;
+		}
+		#main a:hover{
+			background: red;
+		}
+	</style>
 </head>
 <body>
-<button>点击变化布局</button>
-<div id="container"></div>
-<script type="text/javascript" src="js/tagConfig.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-
+	<div id="main">
+		<a href=""><div>1</div></a>
+		<a href=""><div>2</div></a>
+		<a href=""><div>3</div></a>
+		<a href=""><div>4</div></a>
+		<a href=""><div>5</div></a>
+		<a href=""><div>6</div></a>
+		<a href=""><div>7</div></a>
+		<a href=""><div>8</div></a>
+		<a href=""><div>9</div></a>
+	</div>
 </body>
 </html>
-
       
 
       
@@ -304,7 +305,7 @@ position: absolute;
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://98kweb.com/assets/demo/my_news_reader/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://98kweb.com/phone/demo/jiugongge_demo2.html" alt="微信分享二维码">
     </div>
 </div>
 
