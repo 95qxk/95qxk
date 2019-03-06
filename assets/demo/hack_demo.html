@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="//98kweb.com">
   <title>qxk的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="body{ 			background: #fff; 		} 		.bufBox{ 			float: left; 			width: 50px; 			height: 50px; 			background: #ddd; 			border-radius: 5px; 			text-align: center; 			line-height: 50px; 			margin: 0">
+  <meta name="description" content="h3,h4{ 			text-align: center; 		} 		#main{ 			width: 350px; 			height: 100px; 			border: 1px solid #000; 			margin: 0 auto; 		} 		#main .box{ 			width: 100px; 			height: 100px; 			margin-le">
 <meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
 <meta property="og:type" content="website">
 <meta property="og:title" content="qxk的博客">
-<meta property="og:url" content="//98kweb.com/phone/demo/coffee_pc_demo/pro-con.html">
+<meta property="og:url" content="//98kweb.com/assets/demo/hack_demo.html">
 <meta property="og:site_name" content="qxk的博客">
-<meta property="og:description" content="body{ 			background: #fff; 		} 		.bufBox{ 			float: left; 			width: 50px; 			height: 50px; 			background: #ddd; 			border-radius: 5px; 			text-align: center; 			line-height: 50px; 			margin: 0">
+<meta property="og:description" content="h3,h4{ 			text-align: center; 		} 		#main{ 			width: 350px; 			height: 100px; 			border: 1px solid #000; 			margin: 0 auto; 		} 		#main .box{ 			width: 100px; 			height: 100px; 			margin-le">
 <meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2017-07-28T18:51:08.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="qxk的博客">
-<meta name="twitter:description" content="body{ 			background: #fff; 		} 		.bufBox{ 			float: left; 			width: 50px; 			height: 50px; 			background: #ddd; 			border-radius: 5px; 			text-align: center; 			line-height: 50px; 			margin: 0">
+<meta name="twitter:description" content="h3,h4{ 			text-align: center; 		} 		#main{ 			width: 350px; 			height: 100px; 			border: 1px solid #000; 			margin: 0 auto; 		} 		#main .box{ 			width: 100px; 			height: 100px; 			margin-le">
   
     <link rel="alternative" href="/atom.xml" title="qxk的博客" type="application/atom+xml">
   
@@ -171,61 +171,51 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!DOCTYPE html>
-<html>
+        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title></title>
 	<style type="text/css">
-		body{
-			background: #fff;
-		}
-		.bufBox{
-			float: left;
-			width: 50px;
-			height: 50px;
-			background: #ddd;
-			border-radius: 5px;
+		h3,h4{
 			text-align: center;
-			line-height: 50px;
-			margin: 0 5px;
-			position:relative;
-			overflow: hidden;
 		}
-		.bufCover{
-			width: 100%;
-			height: 0;
-			background: #f0f;
-			border-radius: 5px;
-			position: absolute;
+		#main{
+			width: 350px;
+			height: 100px;
+			border: 1px solid #000;
+			margin: 0 auto;
 		}
-		#buf{
-			height: 60px;
+		#main .box{
+			width: 100px;
+			height: 100px;
+			margin-left: 10px;
+			position: relative;
+			float: left;
+			background: #333;
+			color:#ddd;
 		}
-		#des p{
-			padding: 4px 0;
-			margin: 0;
-			font-size: 14px;
+		#main .task1:hover{
+			z-index: 999;
 		}
-		#des .desPro{
-			color: #333;
-			background: #EEE;
+		#main .task2:hover{
+			z-index: 999;
+			background: #999;
 		}
-		#des .desCon{
-			color: #EEE;
+		#main .task3:hover{
+			z-index: 999;
 			background: #333;
 		}
-		#des .desSpe{
-			background: #BBB;
-		}
 	</style>
-	<script type="text/javascript" src="../jquery.js"></script>
 </head>
 <body>
-	<button id="produce">生产</button>
-	<button id="consume">消费</button>
-	<div id="buf">
+	<h3>三个background为#333的box</h3>
+	<h4>- 请在IE6，IE7中触发hover -</h4>
+	<div id="main">
+		<div class="box task1">box1 - 未设置backgorund</div>
+		<div class="box task2">box2 - background: #999</div>
+		<div class="box task3">box3 - background: #333</div>
 	</div>
-	<div id="des"><p></p></div>
-	<script type="text/javascript" src="pro-con.js"></script>
 </body>
 </html>
       
@@ -316,7 +306,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://98kweb.com/phone/demo/coffee_pc_demo/pro-con.html" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://98kweb.com/assets/demo/hack_demo.html" alt="微信分享二维码">
     </div>
 </div>
 
