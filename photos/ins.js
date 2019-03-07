@@ -116,8 +116,8 @@
         var data = res.list[j].arr;
         var liTmpl = "";
         for (var i = 0, len = data.link.length; i < len; i++) {
-          var minSrc = 'https://github.com/95qxk/95qxk.github.io/master/assets/min_img' + data.link[i];
-          var src = 'https://github.com/95qxk/95qxk.github.io/master/assets/img' + data.link[i];
+          var minSrc = 'https://raw.githubusercontent.com/95qxk/95qxk.github.io/master/assets/min_img/' + data.link[i];
+          var src = 'https://raw.githubusercontent.com/95qxk/95qxk.github.io/master/assets/img/' + data.link[i];
           var type = data.type[i];
           var target = src + (type === 'video' ? '.mp4' : '.jpg');
           src += '.jpg';
