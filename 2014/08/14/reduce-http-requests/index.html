@@ -393,21 +393,23 @@
   
 
   
-  <div id="gitment-ctn"></div> 
-<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
-<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+  {% if site.comment_gitment_repo %}
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
-var gitment = new Gitment({
-  id: "//98kweb.com/2014/08/14/reduce-http-requests/",
-  owner: '95qxk',
-  repo: '95qxk.github.io',
-  oauth: {
-    client_id: '6a3380bcc20aaa5dc118',
-    client_secret: '54727ce9de764155fe0c8d4f0df9df19effd0685',
-  },
-})
-gitment.render('gitment-ctn')
+    var gitment = new Gitment({
+        id: 'Thu Aug 14 2014 13:10:00 GMT+0800',
+        owner: '{{site.github_username}}',
+        repo: '{{site.comment_gitment_repo}}',
+        oauth: {
+            client_id: '{{site.comment_gitment_clientId}}',
+            client_secret: '{{site.comment_gitment_clientSecret}}',
+        },
+    });
+    gitment.render('gitmentContainer')
 </script>
+{% endif %}
   
   
   
