@@ -360,23 +360,21 @@
   
 
   
-  {% if site.comment_gitment_repo %}
-<div id="gitmentContainer"></div>
+  <div id="gitment-ctn"></div> 
 <link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
 <script src="https://jjeejj.github.io/js/gitment.js"></script>
 <script>
-    var gitment = new Gitment({
-        id: 'Mon Jan 04 2016 21:30:00 GMT+0800',
-        owner: '{{site.github_username}}',
-        repo: '{{site.comment_gitment_repo}}',
-        oauth: {
-            client_id: '{{site.comment_gitment_clientId}}',
-            client_secret: '{{site.comment_gitment_clientSecret}}',
-        },
-    });
-    gitment.render('gitmentContainer')
+var gitment = new Gitment({
+  id: "//98kweb.com/2016/01/04/the-storied-life-of-aj/",
+  owner: '95qxk',
+  repo: '95qxk.github.io',
+  oauth: {
+    client_id: '6a3380bcc20aaa5dc118',
+    client_secret: '54727ce9de764155fe0c8d4f0df9df19effd0685',
+  },
+})
+gitment.render('gitment-ctn')
 </script>
-{% endif %}
   
   
   
